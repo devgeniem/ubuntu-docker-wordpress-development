@@ -1,5 +1,5 @@
-FROM ci.gpilvi.com:5000/devgeniem/docker-wordpress-ubuntu:latest
-MAINTAINER Onni Hakala - Geniem Oy. <onni.hakala@geniem.com>
+FROM devgeniem/ubuntu-docker-wordpress:latest
+MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
     # Display errors for easier debugging
