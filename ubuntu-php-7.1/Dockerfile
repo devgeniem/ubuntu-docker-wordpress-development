@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:latest
+FROM devgeniem/ubuntu-docker-wordpress:beta
 MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
