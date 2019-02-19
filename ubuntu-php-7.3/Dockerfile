@@ -20,8 +20,9 @@ RUN \
 
     # Install package from official repo
     apt-get update \
-    #&& apt-get install -y php-xdebug \
-
+    && apt-get install -y php7.3-dev  \
+    && apt-get install -y php-pear  \  
+    && pecl install xdebug-2.7.0RC2 \    
     # Create folder for xdebug profiler
     && mkdir -p $XDEBUG_DIR \
 
