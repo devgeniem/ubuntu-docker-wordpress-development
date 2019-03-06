@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.2] - 2019-03-06
+### Added support for loggedin cache by lua
 
 ## [1.1.1] - 2018-10-18
 ### Added
