@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.2] - 2019-04-16
+### Added
+- Xdebug 2.7.1 stable to php73
 
 ## [1.1.1] - 2018-10-18
 ### Added
