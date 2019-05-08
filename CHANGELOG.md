@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Xdebug 2.7.1 stable to php73
 
+## [1.1.1.1] - 2019-03-13
+### Changed
+- Disabled Xdebug's `remote_autostart` setting to speed up non-debugging page loads.
+
 ## [1.1.1] - 2018-10-18
 ### Added
 - Reorganized tags and added php72 to master

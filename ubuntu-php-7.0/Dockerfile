@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:latest
+FROM devgeniem/ubuntu-docker-wordpress:php70
 MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
