@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## Changed
+- Migrated Xdebug configurations for PHP7.4 for Xdebug 3.
+
 ## [1.1.4] - 2019-06-11
 ### Added
 - autostart off for php7.3
