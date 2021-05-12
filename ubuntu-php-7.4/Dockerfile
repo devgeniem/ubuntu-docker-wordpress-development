@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:php74
+FROM devgeniem/ubuntu-docker-wordpress:php74-stable
 MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
@@ -21,8 +21,7 @@ ENV \
     # https://xdebug.org/docs/all_settings#start_with_request
     XDEBUG_START_WITH_REQUEST=yes \
     # https://xdebug.org/docs/all_settings#discover_client_host
-    XDEBUG_DISCOVER_CLIENT_HOST=false \
-
+    XDEBUG_DISCOVER_CLIENT_HOST=false
 
 # Install xdebug
 RUN \
@@ -32,7 +31,7 @@ RUN \
     && apt-get install -y php-xdebug  \
 
     # Create folder for xdebug profiler
-    && mkdir -p $XDEBUG_DIR \
+    && mkdir -p $XDEBUG_OUTPUT_DIR \
 
     # Remove custom error pages because they make debugging harder
     && echo "# Disabled" > /etc/nginx/error_pages.conf \

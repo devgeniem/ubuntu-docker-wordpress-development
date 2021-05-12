@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:php73
+FROM devgeniem/ubuntu-docker-wordpress:php74-stable
 MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
@@ -13,7 +13,7 @@ ENV \
     # You can enable this env to allow profiling your application with xdebug trigger
     # This is disabled by default because it adds plenty of overhead when it's not needed
     # Default: disabled
-    XDEBUG_ENABLE_PROFILE=0
+    XDEBUG_ENABLE_PROFILE=0 \
 
 # Install xdebug
 RUN \

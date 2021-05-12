@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.2.0] - 2021-05-12
 ## Changed
-- Migrated Xdebug configurations for PHP7.4 for Xdebug 3.
+- Migrated Xdebug configurations for PHP7.4 for Xdebug 3. and build php74-stable tag from php74 directory.
 
 ## [1.1.4] - 2019-06-11
 ### Added
