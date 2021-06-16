@@ -17,24 +17,29 @@ ENV \
     # This is the default recommended port.
     XDEBUG_CLIENT_PORT="9003" \
     # Log to container's STDOUT.
-    XDEBUG_LOG=STDOUT \
+    XDEBUG_LOG=/dev/stdout \
     # https://xdebug.org/docs/all_settings#start_with_request
     XDEBUG_START_WITH_REQUEST=yes \
     # https://xdebug.org/docs/all_settings#discover_client_host
-    XDEBUG_DISCOVER_CLIENT_HOST=false
+    XDEBUG_DISCOVER_CLIENT_HOST=true
 
 # Install xdebug
 RUN \
 
     # Install package from official repo
     apt-get update \
-    && apt-get install -y php-xdebug  \
+    && pecl install xdebug \
+    
 
     # Create folder for xdebug profiler
     && mkdir -p $XDEBUG_OUTPUT_DIR \
 
     # Remove custom error pages because they make debugging harder
     && echo "# Disabled" > /etc/nginx/error_pages.conf \
+
+    # enable xdebug
+    && printf "\nzend_extension = xdebug.so\n" >> /etc/php/7.4/fpm/php.ini \
+    && printf "\nzend_extension = xdebug.so\n" >> /etc/php/7.4/cli/php.ini \
 
     # Cleanup
     && apt-get clean \
