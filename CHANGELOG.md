@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.3.0] - 2021-08-12
+## Change
+- Updated base image to devgeniem/ubuntu-docker-wordpress:php74-stable-edge
+- This might be a breaking change
+
 ## [1.2.2] - 2021-08-12
 ## Added
 - added .gitignore
