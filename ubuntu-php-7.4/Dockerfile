@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:php74-stable-edge
+FROM devgeniem/ubuntu-docker-wordpress:php74-stable-sok
 MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
 
 ENV \
