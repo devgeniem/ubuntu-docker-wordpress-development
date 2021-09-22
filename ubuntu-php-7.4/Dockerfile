@@ -1,4 +1,4 @@
-FROM devgeniem/ubuntu-docker-wordpress:php74-stable-edge
+FROM devgeniem/ubuntu-docker-wordpress:php74-stable
 MAINTAINER Ville Pietarinen, Hannu Kumpula - Geniem Oy <ville.pietarinen-nospam@geniem.com> <hannu-nospam@geniem.com>
 
 ENV \
