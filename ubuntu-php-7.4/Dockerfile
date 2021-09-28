@@ -28,7 +28,7 @@ RUN \
 
     # Install package from official repo
     apt-get update \
-    && pecl install xdebug \
+    && pecl install -f xdebug \
     
 
     # Create folder for xdebug profiler
