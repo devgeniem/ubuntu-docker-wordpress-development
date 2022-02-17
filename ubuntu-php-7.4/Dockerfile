@@ -1,5 +1,5 @@
 FROM devgeniem/ubuntu-docker-wordpress:php74-stable-sok
-MAINTAINER Ville Pietarinen - Geniem Oy <ville.pietarinen-nospam@geniem.com>
+MAINTAINER Ville Pietarinen, Hannu Kumpula - Geniem Oy <ville.pietarinen-nospam@geniem.com> <hannu-nospam@geniem.com>
 
 ENV \
     # Display errors for easier debugging
@@ -28,7 +28,7 @@ RUN \
 
     # Install package from official repo
     apt-get update \
-    && pecl install xdebug \
+    && pecl install -f xdebug \
     
 
     # Create folder for xdebug profiler
